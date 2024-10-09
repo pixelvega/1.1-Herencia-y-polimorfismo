@@ -11,7 +11,6 @@ public class Telephone {
 	
 	public void call(String phoneNumber) {
 		System.out.println("Está llamando al número " + phoneNumber);
-		
 	}
 
 }

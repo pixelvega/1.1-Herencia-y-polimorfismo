@@ -1,8 +1,16 @@
 package exercise1_1;
 
 public class StringInstrument extends Instrument {
-	public StringInstrument() {
-		System.out.println("String Instrument initialized.");
+	static {
+		System.out.println("Ahora se está inicializando la instancia de Instrument -> StringInstrument STATIC");
+	}
+	
+	{
+		System.out.println("Ahora se está inicializando la instancia de Instrument -> StringInstrument");
+	}
+	
+	public StringInstrument(String name, double price) {
+		super(name, price);
 	}
 	
 	public void play() {
